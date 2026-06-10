@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --bg-color: #0f172a;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --card-bg: #1e293b99;
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --accent-cyan: #06b6d4;
-    --accent-violet: #89CFF0;
-    --color-primary: #89CFF0;
-    --nav-bg: rgba(15, 23, 42, 0.75);
+    --bg-color: #07111f;
+    --text-main: #f8fbff;
+    --text-muted: #dbe7f5;
+    --card-bg: rgba(15, 23, 42, 0.94);
+    --glass-border: rgba(148, 163, 184, 0.24);
+    --accent-cyan: #22d3ee;
+    --accent-violet: #c4b5fd;
+    --color-primary: #67e8f9;
+    --nav-bg: rgba(7, 17, 31, 0.96);
     --transition: all 0.3s ease;
 }
 
@@ -95,8 +95,8 @@ nav a:hover {
 
 button {
     padding: 12px 28px;
-    background: var(--color-primary);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary), var(--accent-cyan));
+    color: #082f49;
     border: none;
     border-radius: 8px;
     font-family: 'Inter', sans-serif;
@@ -115,10 +115,10 @@ button:hover {
 
 input, select, textarea {
     padding: 12px 16px;
-    background: lightblue;
-    border: 1px solid var(--glass-border);
+    background: #eff6ff;
+    border: 1px solid rgba(148, 163, 184, 0.45);
     border-radius: 8px;
-    color: #000;
+    color: #0f172a;
     font-family: 'Inter', sans-serif;
     outline: none;
     transition: var(--transition);
@@ -126,8 +126,8 @@ input, select, textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: #000;
-    opacity: 0.7;
+    color: #334155;
+    opacity: 0.85;
 }
 
 option {
@@ -137,8 +137,18 @@ option {
 
 input:focus, select:focus, textarea:focus {
     border-color: var(--accent-cyan);
-    background: #add8e6;
-    color: #000;
+    background: #f8fbff;
+    color: #0f172a;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-cyan);
+    outline-offset: 3px;
 }
 
 /* FOOTER */
